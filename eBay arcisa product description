@@ -1,0 +1,781 @@
+<div class="pagewidth essBody">
+<div class="pageminwidth ess-outer">
+<div class="pagelayout ess-wrapper">
+<div class="pagecontainer ess-page">
+<div id="essHeaderContainer">
+
+<meta content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no" name="viewport">
+
+
+<style>
+    
+    body {
+  /*background: #f6f6f4;*/
+  color: #2f2f2f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* ===== HEADER ===== */
+.militar-header {
+  text-align: center;
+  padding: 20px 10px 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.militar-header-link {
+  display: inline-block;
+}
+
+.militar-header-logo {
+  max-width: 220px;
+  height: auto;
+}
+
+.militar-header-tagline {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #6b6b6b;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+/* PRODUCT TITLE SECTION */
+.product-title-section {
+  background: #f5f5f3;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 18px 12px;
+  text-align: center;
+}
+
+.product-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #555;
+  text-transform: uppercase;
+}
+
+
+
+
+/* ===== PRODUC OVERVIEW ===== */
+
+.product-overview {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* CONTAINER */
+.product-description { 
+  border: 1px solid #eeeeea;
+  background: #fafafa;
+  margin-bottom: 30px;
+}
+
+/* TITLE */
+.product-description {
+  border: 1px solid #e6e4da;
+  background: #fafaf7; /* šiek tiek šviesesnis nei body */
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+/* Title bar */
+.product-description .product-title {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #2e2e2e;
+  background: #eeeeea;
+  position: relative;
+}
+
+/* Short accent line (left only, ~10–12%) */
+.product-description .product-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 7%;
+  height: 2px;
+  background: #6f5f3f; 
+}
+
+/* Content */
+.product-description .product-content {
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2e2e2e;
+}
+
+.product-description .product-content p {
+  margin-bottom: 12px;
+}
+
+/* LEFT */
+.product-media {
+  width: 100%;
+}
+
+.product-main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* THUMBNAILS */
+.product-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.product-thumbnails img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.product-summary h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.product-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-features li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+}
+
+.product-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #6b6b4f;
+} #6b6b4f;
+}
+
+
+
+/* ===== PRODUCT SIZING SECTION ===== */
+
+.product-sizing {
+  max-width: 80%;
+  margin: 60px auto;
+  background: #fafafa;
+  border: 1px solid #e6e6de;
+}
+
+.item-size-chart {
+  margin-top: 20px;
+}
+
+.item-size-chart-note {
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+  font-size: 13px;
+  color: #444;
+}
+
+.item-size-chart-note p {
+  margin-bottom: 10px;
+}
+
+/* IMAGE */
+.item-size-chart-img {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.item-size-chart-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* TABLE */
+.item-size-chart-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item-size-chart-table table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+  font-size: 13px;
+}
+
+.item-size-chart-table th,
+.item-size-chart-table td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.item-size-chart-table th {
+  background: #f0f0ed;
+  font-weight: bold;
+}
+
+
+/* ===============================
+   PRODUCT TABS (eBay safe)
+================================ */
+
+.product-tabs {
+  max-width: 1100px;
+  margin: 70px auto 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hide radio buttons */
+.product-tabs input {
+  display: none;
+}
+
+/* Tabs navigation */
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 28px;
+  background: #eeeeea;
+}
+
+.tabs-nav label {
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #666;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* Active tab */
+#tab-shipping:checked ~ .tabs-nav label[for="tab-shipping"],
+#tab-payment:checked ~ .tabs-nav label[for="tab-payment"],
+#tab-returns:checked ~ .tabs-nav label[for="tab-returns"],
+#tab-about:checked ~ .tabs-nav label[for="tab-about"],
+#tab-contact:checked ~ .tabs-nav label[for="tab-contact"] {
+  color: #000;
+  font-weight: 600;
+  border-color: #6b6b4f;
+}
+
+/* Content wrapper */
+.tabs-content {
+  padding-top: 10px;
+}
+
+/* Panels */
+.tab-panel {
+  display: none;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #333;
+}
+
+/* Show active panel */
+#tab-shipping:checked ~ .tabs-content .shipping,
+#tab-payment:checked ~ .tabs-content .payment,
+#tab-returns:checked ~ .tabs-content .returns,
+#tab-about:checked ~ .tabs-content .about,
+#tab-contact:checked ~ .tabs-content .contact {
+  display: block;
+}
+
+/* Lists inside tabs */
+.tab-panel ul {
+  padding-left: 18px;
+  margin-top: 8px;
+}
+
+.tab-panel li {
+  margin-bottom: 6px;
+}
+
+/* Paragraph spacing */
+.tab-panel p {
+  margin-bottom: 10px;
+}
+
+/* Links */
+.tab-panel a {
+  color: #6b6b4f;
+  text-decoration: none;
+}
+
+.tab-panel a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ===== FOOTER ===== */
+.militar-footer {
+  margin-top: 40px;
+  padding: 25px 15px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  
+}
+
+.footer-logo img {
+  max-width: 60px;
+  margin-bottom: 8px;
+}
+
+.footer-tagline {
+  font-size: 13px;
+  color: #6b6b6b;
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+.footer-copy a {
+  color: #8a8a8a;
+  text-decoration: none;
+}
+
+.footer-copy a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .mil-grid {
+    flex-direction: column;
+  }
+  .militar-header-logo {
+    max-width: 180px;
+  }
+
+  .mil-specs ul {
+    column-count: 1;
+  }
+  
+  .product-overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+
+
+<!--Header-->
+<header class="militar-header">
+  <a
+    href="https://www.ebaystores.com/uabmilitar/"
+    target="_blank"
+    class="militar-header-link"
+  >
+    <img
+      src="https://raw.githubusercontent.com/hubertasmilitar-collab/militar/main/header-logo-2.png"
+      alt="UAB Militar"
+      class="militar-header-logo"
+    />
+  </a>
+
+</header>
+
+
+
+<!-- Container-->
+<main class="militar-main">
+
+  <!--  PRODUCT TITLE SECTION  -->
+  <section class="product-title-section">
+  <h1 class="product-title">
+    [{PRODUCT_LISTING_TITLE}]
+  </h1>
+</section>
+
+  <!--PRODUCT OVERVIEW  -->
+  <section class="product-overview">
+    
+    <!-- LEFT: CONTENT -->
+    <div class="product-media">
+
+    <img class="product-main-image"
+         src="[{PRODUCT_IMAGE1}]"
+         alt="Product image">
+
+    <div class="product-thumbnails">
+      ({IF["[{PRODUCT_IMAGE2}]"!=""]})
+      <img src="[{PRODUCT_IMAGE2}]" alt="Thumbnail">
+      ({ENDIF})
+
+      ({IF["[{PRODUCT_IMAGE3}]"!=""]})
+      <img src="[{PRODUCT_IMAGE3}]" alt="Thumbnail">
+      ({ENDIF})
+
+      ({IF["[{PRODUCT_IMAGE4}]"!=""]})
+      <img src="[{PRODUCT_IMAGE4}]" alt="Thumbnail">
+      ({ENDIF})
+    </div>
+
+  </div>
+  
+  
+    <!-- RIGHT: CONTENT -->
+    <div class="product-summary">
+
+    <div  class="product-description" >
+      <h3 class="product-title" >Description</h3>
+      <div class="product-content" >[{PRODUCT_DESCRIPTION}]</div>
+    
+    </div>
+    <!-- Condition Description-->
+    <div>
+      <h4>Condition description : [{PRODUCT_PROPERTY_CONDITION DESCRIPTION}]</h4>
+    </div>
+        
+        <!-- FEATURES -->
+    <div class="product-description">
+      <h3 class="product-title" >Features</h3>
+      <div class="product-content" >
+           <ul>
+        ({IF["[{PRODUCT_PROPERTY_MATERIAL}]"!=""]})
+        <li>Durable material: [{PRODUCT_PROPERTY_MATERIAL}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_CONDITION SHOP}]"!=""]})
+        <li>Condition: [{PRODUCT_PROPERTY_CONDITION SHOP}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_ORIGINAL/REPRODUCTION}]"!=""]})
+        <li>Authenticity: [{PRODUCT_PROPERTY_ORIGINAL/REPRODUCTION}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_CLOSURE}]"!=""]})
+        <li>Closure type: [{PRODUCT_PROPERTY_CLOSURE}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_ZIPPER}]"!=""]})
+        <li>Zipper: [{PRODUCT_PROPERTY_ZIPPER}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_POCKET TYPE}]"!=""]})
+         <li>Pocket type: [{PRODUCT_PROPERTY_POCKET TYPE}]</li>
+         ({ENDIF})
+         ({IF["[{PRODUCT_PROPERTY_INNER POCKETS}]"!=""]})
+        <li>Inner pockets: [{PRODUCT_PROPERTY_INNER POCKETS}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_HOOD}]"!=""]})
+        <li>Hood: [{PRODUCT_PROPERTY_HOOD}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_CUFFS}]"!=""]})
+        <li>Cuffs: [{PRODUCT_PROPERTY_CUFFS}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_WATERPROOF}]"!=""]})
+        <li>Water resistance: [{PRODUCT_PROPERTY_WATERPROOF}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_WINDPROOF}]"!=""]})
+        <li>Windproof: [{PRODUCT_PROPERTY_WINDPROOF}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_WEIGHT}]"!=""]})
+        <li>Weight: [{PRODUCT_PROPERTY_WEIGHT}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_DIMENSIONS}]"!=""]})
+        <li>Dimensions: [{PRODUCT_PROPERTY_DIMENSIONS}]</li>
+        ({ENDIF})
+         ({IF["[{PRODUCT_PROPERTY_VOLUME}]"!=""]})
+        <li>Volume: [{PRODUCT_PROPERTY_VOLUME}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_CAPACITY}]"!=""]})
+        <li>Capacity: [{PRODUCT_PROPERTY_CAPACITY}]</li>
+        ({ENDIF})
+        ({IF["[{PRODUCT_PROPERTY_ITEMS INCLUDED}]"!=""]})
+        <li>Items included: [{PRODUCT_PROPERTY_ITEMS INCLUDED}]</li>
+        ({ENDIF})
+      </ul>
+      </div>
+     
+    </div>
+
+  </div>
+
+  </section>
+
+  <!--PRODUCT SIZING  -->
+  <section style="max-width: 75%; margin: 60px auto;" class="product-description">
+      
+      ({IF["[{PRODUCT_PROPERTY_SIZE CHART}]"!=""]})<h3 class="product-title">Sizing & Measurements</h3>
+      ({ENDIF})
+            ({IF["[{PRODUCT_PROPERTY_TYPE}]"="Pants"]})
+            <h3 class="product-title">Sizing & Measurements</h3>
+            ({ENDIF})
+     
+      
+      ({IF["[{PRODUCT_PROPERTY_SIZE CHART}]"!=""]})
+      <div class="item-size-chart product-content">
+            <div class="item-size-chart-note">
+            <p>* Please pay attention to the measurements: All sizes are taken measuring one or two units of each size. Measurements are taken when laid flat and it might be with + - 1 cm error </p>
+            <p>If the product it's used condition may be stretched or shrank from the washing, there's a possibility that the product you will receive may be a slightly different size than specified in the size chart.</p>
+            <p>For that reason, we can't guarantee that the product you'll purchase will be the accurate size as advertised in the size chart. </p>
+            
+            <p>*We provide size charts for the general purpose, not for accurate measurements.
+            Please accept this fact before purchasing</p>
+            
+            </div>
+            ({IF["[{PRODUCT_PROPERTY_SIZING IMAGE}]"!=""]})
+            <div class="item-size-chart-img text-center py-3"><img src="[{PRODUCT_PROPERTY_SIZING IMAGE}]"></div>
+            	({ENDIF})
+            ({IF["[{PRODUCT_PROPERTY_SIZE CHART}]"!=""]})
+            <div class="item-size-chart-table">
+            
+            [{PRODUCT_PROPERTY_SIZE CHART}]
+            [{PRODUCT_PROPERTY_SIZE CHARTP2}]
+            [{PRODUCT_PROPERTY_SIZE CHARTP3}]
+            [{PRODUCT_PROPERTY_SIZE CHARTP4}]
+          
+            
+            </div>
+            ({ENDIF})
+      </div>
+      ({ENDIF})
+      
+      ({IF["[{PRODUCT_PROPERTY_TYPE}]"="Pants"]})
+      <div class="item-size-chart">
+        <div class="item-size-chart-note">
+        <p><i>Sizing note: All our pants on the sale are manually re-measured to ensure the correct size. Due to different country's size labeling and the possibility of used clothing shrank or stretched from the washing we do not follow the manufacturer's marking and provide the exact size of each unit. </i> </p>
+        <p><i>*Waist (W) The trousers have been buttoned and laid flat then measured from one side to the other, then this number it&rsquo;s doubled to get the total circumference of waist size in inches</i> </p>
+        <p><i>*Length (L) it&rsquo;s the inseam length of the trousers in inches</i> </p>
+        <p><i>*If you need size in centimeters, just convert inches to CM: multiply by 2.54</i> </p>
+        <p><i>*Provided sizes are exact pants measurements taken as shown in the image below</i></p>
+        
+        
+        </div>
+        
+        <div class="item-size-chart-img text-center py-3"><img src="https://cdn.militaras.lt/eBay/item/images/Pants.png"></div>
+        
+        </div>
+      ({ENDIF})
+	  ({IF["[{PRODUCT_PROPERTY_STYLE}]"="Glove"]})
+      <div class="item-size-chart">
+<div class="item-size-chart-img text-center py-3"><img src="https://cdn.militaras.lt/eBay/item/SizingImages/Gloves.png"></div>
+
+<div class="item-size-chart-table">
+<table class="tableizer-table">
+
+  <tr class="tableizer-firstrow">
+  <th>Generic Size</th>
+  <th>Hand circumference </th>
+ </tr>
+ <tr>
+  <td valign="bottom">X-Small</td>
+  <td valign="bottom">6&quot;-6.5&quot;</td>
+ </tr>
+ <tr>
+  <td valign="bottom">Small</td>
+  <td valign="bottom">7&quot;-7.5&quot;</td>
+ </tr>
+ <tr>
+  <td valign="bottom">Medium</td>
+  <td valign="bottom">8&quot;-8.5&quot;</td>
+ </tr>
+ <tr>
+  <td valign="bottom">Large</td>
+  <td valign="bottom">9&quot;-9.5&quot;</td>
+ </tr>
+ <tr>
+  <td valign="bottom">X-Large</td>
+  <td valign="bottom">10&quot;-10.5&quot;</td>
+ </tr>
+ <tr>
+  <td valign="bottom">XX-Large</td>
+  <td valign="bottom">11&quot;-11.5&quot;</td>
+ </tr>
+ <tr>
+  <td valign="bottom">3X-Large</td>
+  <td valign="bottom">12&quot;-12.5&quot;</td>
+ </tr>
+</table>
+
+
+</div>
+
+</div>
+      ({ENDIF})
+       ({IF["[{PRODUCT_PROPERTY_STYLE}]"="Mitten"]})
+       <div class="item-size-chart">
+<div class="item-size-chart-img text-center py-3"><img src="https://cdn.militaras.lt/eBay/item/SizingImages/Gloves.png"></div>
+
+<div class="item-size-chart-table">
+
+<table class="tableizer-table">
+
+  <tr class="tableizer-firstrow">
+  <td><p>Generic Size</p></td>
+  <td><p>Hand circumference </p></td>
+ </tr>
+ <tr>
+  <td valign="bottom"><p>X-Small</p></td>
+  <td valign="bottom"><p>6&quot;-6.5&quot;</p></td>
+ </tr>
+ <tr>
+  <td valign="bottom"><p>Small</p></td>
+  <td valign="bottom"><p>7&quot;-7.5&quot;</p></td>
+ </tr>
+ <tr>
+  <td valign="bottom"><p>Medium</p></td>
+  <td valign="bottom"><p>8&quot;-8.5&quot;</p></td>
+ </tr>
+ <tr>
+  <td valign="bottom"><p>Large</p></td>
+  <td valign="bottom"><p>9&quot;-9.5&quot;</p></td>
+ </tr>
+ <tr>
+  <td valign="bottom"><p>X-Large</p></td>
+  <td valign="bottom"><p>10&quot;-10.5&quot;</p></td>
+ </tr>
+ <tr>
+  <td valign="bottom"><p>XX-Large</p></td>
+  <td valign="bottom"><p>11&quot;-11.5&quot;</p></td>
+ </tr>
+ <tr>
+  <td valign="bottom"><p>3X-Large</p></td>
+  <td valign="bottom"><p>12&quot;-12.5&quot;</p></td>
+ </tr>
+</table>
+
+
+</div>
+
+</div>
+       ({ENDIF})
+  </section>
+  
+  <!--PRODUCT TABS  -->
+  <section class="product-tabs">
+
+  <input type="radio" name="tabs" id="tab-shipping" checked>
+  <input type="radio" name="tabs" id="tab-payment">
+  <input type="radio" name="tabs" id="tab-returns">
+  <input type="radio" name="tabs" id="tab-about">
+  <input type="radio" name="tabs" id="tab-contact">
+
+  <div style="background: #eeeeea;" class="tabs-nav">
+    <label for="tab-shipping">Shipping</label>
+    <label for="tab-payment">Payment</label>
+    <label for="tab-returns">Returns</label>
+    <label for="tab-about">About Us</label>
+    <label for="tab-contact">Contact</label>
+  </div>
+
+  <div class="tabs-content">
+
+    <div class="tab-panel shipping">
+                <p><em>Due to new procedures and safety policies because of a global emergency, we are experiencing processing and shipping delays, especially before the Christmas holidays. Due to this, global logistical chains are temporarily affected, including personnel, transport, airports, distribution centers etc. Therefore, we are asking for your patience and understanding if you will not get your order on time, as it could be a delay of up to 2 weeks. </em></p>
+                <p><em>&nbsp;</em>*Items purchased during the weekend will usually be dispatched on Monday. We aim to pack and dispatch goods as soon as possible.&nbsp;</p>
+                <p>&nbsp;*All items purchased we are dispatching with the standard shipping method and are sent using a signed postal service.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>&nbsp;</p>
+                <p><strong>Average shipping time frame:</strong></p>
+                <p>&nbsp;</p>
+                <p><strong>EU</strong></p>
+                <ul>
+                <li>Standard shipping to European&nbsp;addresses takes on average 5-12 working days.</li>
+                <li>Express shipping 2-5 working days</li>
+                </ul>
+                <p><strong>US</strong></p>
+                <ul>
+                <li>Standard shipping to the USA&nbsp;takes on average 7-20 business days.&nbsp;</li>
+                <li>Express shipping 3-5 working days&nbsp;</li>
+                </ul>
+                <p><strong>Worldwide</strong></p>
+                <ul>
+                <li>Standard shipping to the Rest of the world average 7-25 working days.</li>
+                <li>Express shipping 3-7 working days (depends on the recipient&rsquo;s location)</li>
+    </div>
+
+    <div class="tab-panel payment">
+              <p>The following payment methods, which are offered at eBay checkout we&rsquo;re accepting:</p>
+        <ul>
+        <li>PayPal</li>
+        <li>PayPal Credit</li>
+        <li>Credit card or debit card</li>
+        <li>Apple Pay</li>
+        <li>Google Pay</li>
+        </ul>
+        <p>Combined shipping:</p>
+        <p>&nbsp;*In countries where&rsquo;s carriers deliveries rates highly affected due to total package weight, we cannot combine the total price for the shipping, but in some destinations, we are able to deliver multiple items in one package, saving postage costs. Please contact us by eBay message if do you like to purchase several products at once.</p>
+        <p>&nbsp;*If you considering purchasing several products and seeking to get a discount for combined shipping, there're 2 options:</p>
+        <ul>
+        <li>Request total at your cart before checkout. In some cases, you may get a message that &ldquo;the seller already offering a discount&rdquo; and won't let you combine shipping at Ebay.com page, so you can try to buy the same items at Ebay.co.uk page, that should work!</li>
+        <li>Please let us know before purchasing which items you'd like to purchase, we'll calculate an actual delivery price, and if the combined shipping is possible, we&rsquo;ll inform you and refund shipping price overcharges as a partial refund if you decide to make an order</li>
+        </ul>
+    </div>
+
+    <div class="tab-panel returns">
+             <p>If you change your mind, you have 30 calendar days to return your order from the day you receive your items.</p>
+        <p>We will only refund the original cost of the item's price, and we will not refund any postage fees for the return unless the problem was a fault of ours.</p>
+        <p>When you return the item, write your User ID or Item ID on the packaging. All returned goods must be returned from the same address as it was sent to</p>
+        <p>The sender's name should be the same as specified at the checkout. Otherwise a refund will not be issued, as it will be no possibility to clear the parcel at customs</p>
+        
+        <p>Please take attention before purchasing that we are located in Europe, Lithuania. And all returns should be dispatched to the same address as it was sent from. </p>
+        <p>So if you consider that product you are willing to purchase might not fit you,</p>
+        <p>please check return postage price to avoid that returning fees cost you more than the exact product price</p>
+    </div>
+
+    <div class="tab-panel about">
+     <p>UAB Militar &ndash; Regarding company name it&rsquo;s definitely something that corresponds with the military. And it&rsquo;s exactly true, our company it&rsquo;s professional retail selling of military products. Genuine, vintage, original, and authentic products it&rsquo;s more than 95% of our all assortment. Our vision is to be the biggest online shop of genuine military products, and we are working with this idea for more than five years. Vintage army surplus items it&rsquo;s our main company stream. As you can find in our products titles such phrases as &ldquo;Original&rdquo; or &ldquo;Genuine&rdquo;, so you can be 100% sure that you will receive authentic military surplus product
+     </p>
+    </div>
+
+    <div class="tab-panel contact">
+      <p> 
+        <a target="_blank" href="http://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&amp;requested=uabmilitar">Click here to contact via eBay message
+        </a> 
+      </p>
+      
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+
+<!--Footer-->
+<footer class="militar-footer">
+  <a href="https://www.ebaystores.com/uabmilitar/" target="_blank" class="footer-logo">
+    <img src="https://raw.githubusercontent.com/hubertasmilitar-collab/militar/main/footer-logo-2.png" alt="UAB Militar">
+
+
+  </a>
+
+  <p class="footer-tagline">Genuine Tactical & Outdoor Equipment</p>
+
+  <p class="footer-copy">
+    © 2025 <a href="https://www.ebaystores.com/uabmilitar/" target="_blank">UAB Militar</a>. All rights reserved.
+  </p>
+</footer>
